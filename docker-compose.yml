@@ -27,11 +27,6 @@ services:
       - db_data:/var/lib/mysql
     restart: on-failure
 
-networks:
-  nginxproxymanager:
-    driver: overlay
-    attachable: true
-
 volumes:
     app_data:
     db_data:
